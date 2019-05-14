@@ -58,7 +58,6 @@ Pod::Spec.new do |s|
     ss.vendored_frameworks = 'iOS/DoraemonKit/Framework/*.framework'
   end
 
-  s.dependency 'PNChart'
   s.dependency 'fishhook'
 
 end

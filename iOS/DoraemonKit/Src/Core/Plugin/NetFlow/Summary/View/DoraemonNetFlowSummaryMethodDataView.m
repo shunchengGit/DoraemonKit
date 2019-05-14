@@ -7,7 +7,6 @@
 
 #import "DoraemonNetFlowSummaryMethodDataView.h"
 #import "UIView+Doraemon.h"
-#import <PNChart/PNChart.h>
 #import "DoraemonNetFlowDataSource.h"
 #import "Doraemoni18NUtil.h"
 
@@ -38,23 +37,23 @@
         
         [self getData];
         
-        if (_xLabels.count>0) {
-            PNBarChart *chart = [[PNBarChart alloc] initWithFrame:CGRectMake(0, tipLabel.doraemon_bottom+10, self.doraemon_width, self.doraemon_height-tipLabel.doraemon_bottom-10)];
-            chart.showChartBorder = YES;
-            chart.showLabel = YES;
-            chart.chartMarginTop = 5.0;
-            chart.labelMarginTop = -5.0;
-            chart.isGradientShow = NO;
-            chart.xLabels = _xLabels;
-            chart.yValues = _yValues;
-            [chart setStrokeColors : _strokeColors];
-            chart.yLabelFormatter = ^ (CGFloat yLabelValue) {
-                return [NSString stringWithFormat:@"%f",yLabelValue];
-            };
-            [chart strokeChart];
-            
-            [self addSubview:chart];
-        }
+//        if (_xLabels.count>0) {
+//            PNBarChart *chart = [[PNBarChart alloc] initWithFrame:CGRectMake(0, tipLabel.doraemon_bottom+10, self.doraemon_width, self.doraemon_height-tipLabel.doraemon_bottom-10)];
+//            chart.showChartBorder = YES;
+//            chart.showLabel = YES;
+//            chart.chartMarginTop = 5.0;
+//            chart.labelMarginTop = -5.0;
+//            chart.isGradientShow = NO;
+//            chart.xLabels = _xLabels;
+//            chart.yValues = _yValues;
+//            [chart setStrokeColors : _strokeColors];
+//            chart.yLabelFormatter = ^ (CGFloat yLabelValue) {
+//                return [NSString stringWithFormat:@"%f",yLabelValue];
+//            };
+//            [chart strokeChart];
+//
+//            [self addSubview:chart];
+//        }
 
     }
     return self;
@@ -72,7 +71,7 @@
     }
     
     NSMutableArray *methodDataArray = [NSMutableArray array];
-    NSArray *colors = @[PNGreen, PNYellow, PNRed];
+//    NSArray *colors = @[PNGreen, PNYellow, PNRed];
     NSInteger colorIndex = 0;
     for (NSString *methodA in methodArray) {
         NSMutableDictionary *dic = [NSMutableDictionary dictionary];
@@ -85,7 +84,7 @@
             }
         }
         [dic setValue:@(num) forKey:@"num"];
-        [dic setValue:colors[colorIndex%(colors.count)] forKey:@"color"];
+//        [dic setValue:colors[colorIndex%(colors.count)] forKey:@"color"];
         colorIndex++;
         [methodDataArray addObject:dic];
     }
