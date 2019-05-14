@@ -23,26 +23,14 @@ PODS:
   - CocoaLumberjack (3.5.2):
     - CocoaLumberjack/Core (= 3.5.2)
   - CocoaLumberjack/Core (3.5.2)
-  - DoraemonKit/Core (1.1.8-alpha0):
-    - fishhook
-    - PNChart
-  - DoraemonKit/WithGPS (1.1.8-alpha0):
+  - DoraemonKit/Core (1.1.8-alpha1)
+  - DoraemonKit/WithGPS (1.1.8-alpha1):
     - DoraemonKit/Core
-    - fishhook
-    - PNChart
-  - DoraemonKit/WithLoad (1.1.8-alpha0):
+  - DoraemonKit/WithLoad (1.1.8-alpha1):
     - DoraemonKit/Core
-    - fishhook
-    - PNChart
-  - DoraemonKit/WithLogger (1.1.8-alpha0):
+  - DoraemonKit/WithLogger (1.1.8-alpha1):
     - CocoaLumberjack
     - DoraemonKit/Core
-    - fishhook
-    - PNChart
-  - fishhook (0.2)
-  - PNChart (0.8.9):
-    - UICountingLabel (~> 1.2.0)
-  - UICountingLabel (1.2.0)
 
 DEPENDENCIES:
   - AFNetworking (= 2.6.3)
@@ -55,9 +43,6 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
     - CocoaLumberjack
-    - fishhook
-    - PNChart
-    - UICountingLabel
 
 EXTERNAL SOURCES:
   DoraemonKit:
@@ -66,10 +51,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   CocoaLumberjack: 118bf4a820efc641f79fa487b75ed928dccfae23
-  DoraemonKit: 18bf9155de3e9cefb2f6e0cb8d743aaf2a812a73
-  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
-  PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
-  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+  DoraemonKit: 9ae2bd1420c991c3adae988ec5add05713865ff3
 
 PODFILE CHECKSUM: f601867a5c4b742a86a6ca031650062a81a5022b
 
