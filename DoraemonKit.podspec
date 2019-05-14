@@ -7,7 +7,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DoraemonKit'
-  s.version          = '1.1.8-alpha0'
+  s.version          = '1.1.8-alpha1'
   s.summary          = 'iOS各式各样的工具集合'
   s.description      = <<-DESC
                           iOS各式各样的工具集合 Desc
@@ -57,10 +57,6 @@ Pod::Spec.new do |s|
     ss.dependency 'DoraemonKit/Core'
     ss.vendored_frameworks = 'iOS/DoraemonKit/Framework/*.framework'
   end
-
-  s.dependency 'PNChart'
-  s.dependency 'fishhook'
-  s.dependency 'UITextView+Placeholder'
 
 end
 
