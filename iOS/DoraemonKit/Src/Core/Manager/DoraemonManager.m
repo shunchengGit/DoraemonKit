@@ -148,7 +148,6 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
 #endif
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonH5Plugin];
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonCrashPlugin];
-    [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonSubThreadUICheckPlugin];
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonDeleteLocalDataPlugin];
     
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonNSLogPlugin];
@@ -161,7 +160,6 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonCPUPlugin];
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonMemoryPlugin];
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonNetFlowPlugin];
-    [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonANRPlugin];
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonAllTestPlugin];
 #if DoraemonWithLoad
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonMethodUseTimePlugin];
@@ -352,13 +350,6 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
                                    @{kPluginName:@"DoraemonCrashPlugin"},
                                    @{kAtModule:DoraemonLocalizedString(@"常用工具")}
                                    ],
-                           @(DoraemonManagerPluginType_DoraemonSubThreadUICheckPlugin) : @[
-                                   @{kTitle:DoraemonLocalizedString(@"子线程UI")},
-                                   @{kDesc:DoraemonLocalizedString(@"非主线程UI渲染检查")},
-                                   @{kIcon:@"doraemon_ui"},
-                                   @{kPluginName:@"DoraemonSubThreadUICheckPlugin"},
-                                   @{kAtModule:DoraemonLocalizedString(@"常用工具")}
-                                   ],
                            @(DoraemonManagerPluginType_DoraemonDeleteLocalDataPlugin) : @[
                                    @{kTitle:DoraemonLocalizedString(@"清除本地数据")},
                                    @{kDesc:DoraemonLocalizedString(@"清除本地数据")},
@@ -408,13 +399,6 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
                                    @{kDesc:DoraemonLocalizedString(@"流量监控")},
                                    @{kIcon:@"doraemon_net"},
                                    @{kPluginName:@"DoraemonNetFlowPlugin"},
-                                   @{kAtModule:DoraemonLocalizedString(@"性能检测")}
-                                   ],
-                           @(DoraemonManagerPluginType_DoraemonANRPlugin) : @[
-                                   @{kTitle:DoraemonLocalizedString(@"卡顿")},
-                                   @{kDesc:DoraemonLocalizedString(@"卡顿监控")},
-                                   @{kIcon:@"doraemon_kadun"},
-                                   @{kPluginName:@"DoraemonANRPlugin"},
                                    @{kAtModule:DoraemonLocalizedString(@"性能检测")}
                                    ],
                            @(DoraemonManagerPluginType_DoraemonAllTestPlugin) : @[

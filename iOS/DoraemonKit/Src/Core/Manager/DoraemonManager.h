@@ -21,8 +21,6 @@ typedef NS_ENUM(NSUInteger, DoraemonManagerPluginType) {
     DoraemonManagerPluginType_DoraemonH5Plugin,
     // Crash查看
     DoraemonManagerPluginType_DoraemonCrashPlugin,
-    // 子线程UI
-    DoraemonManagerPluginType_DoraemonSubThreadUICheckPlugin,
     // 清除本地数据
     DoraemonManagerPluginType_DoraemonDeleteLocalDataPlugin,
     // NSLog
@@ -39,8 +37,6 @@ typedef NS_ENUM(NSUInteger, DoraemonManagerPluginType) {
     DoraemonManagerPluginType_DoraemonMemoryPlugin,
     // 流量监控
     DoraemonManagerPluginType_DoraemonNetFlowPlugin,
-    // 卡顿检测
-    DoraemonManagerPluginType_DoraemonANRPlugin,
     // 自定义 性能数据保存到本地
     DoraemonManagerPluginType_DoraemonAllTestPlugin,
     // Load耗时
